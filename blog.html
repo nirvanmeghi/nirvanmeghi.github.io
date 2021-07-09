@@ -64,45 +64,47 @@
 <body>
     <div class="card mainbody">
         <div class="card-content">
-            <div class="content" style="text-align: left;">
-                <P>
-                    I have been thinking of doing something with web development for over 10 years now.
-                    Back then I didn’t know how far I could go with this, after finishing a bachelor
-                    degree in tourism, I moved to NZ to study cookery, then working in a kitchen for
-                    over 5 years I finally realized that I was not made for hospitality.So I took 180
-                    and start looking into my others dreams, that's when I find EDA.
-                </P>
-                <p>
-                    I like to think of myself as a modern hippie, who’s an overthinker and has a
-                    bit of a ADHD in me. I’m currently working on my childhood trauma and learning to
-                    overcome
-                    its
-                    implications. Also, learning to be my own parents so I can heal my inner child.
-
-                <P>
-                    So this journey of learning is very challenging and fun. So I
-                    am
-                    here to explore all posibilities. <strong>Wish me LUCK !</strong></p>
-                </P>
-
-                <span>
-
-                    <div class="column">
-
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="content" style="text-align: left;">
 
 
+            <title>Save Web Form Data to Spreadsheets</title>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <script>
+                function SubForm() {
+                    $.ajax({
+                        url: "https://api.apispreadsheets.com/data/15236/",
+                        type: "post",
+                        data: $("#myForm").serializeArray(),
+                        success: function () {
+                            alert("Form Data Submitted :)")
+                        },
+                        error: function () {
+                            alert("There was an error :(")
+                        }
+                    });
+                }
+            </script>
+            </head>
 
-                                </div>
-                            </div>
-                        </div>
+            <body>
+                <form id="myForm">
+                    <label></label>
+                    <input class="input is-primary" type="text" placeholder="content title here" name="title" />
+                    <br />
+                    <br />
 
-                </span>
+                    <label></label>
+                    <input class="input is-large" type="text" placeholder="write your post content here"
+                        name="content" />
+                    <br />
+                    <br />
+                </form>
+                <button class="button is-primary" onclick='SubForm()'>Submit</button>
 
 
-            </div>
+        </div>
+
+    </div>
 
 
 
