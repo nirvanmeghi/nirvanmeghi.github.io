@@ -1,5 +1,7 @@
 <style type="text/css">
 
+
+
 body {
     font-family: '{select:font}', sans-serif;
     font-size: {select:font size};
@@ -110,62 +112,110 @@ li {max-width: 100%; line-height: 160%;}
     width: 3.25em;
     height: 3.25em;
 }
-div {
-    color: {color:title};
-    letter-spacing: 2px;
-    line-height: 160%;
-    font-weight: bold;
-    text-transform: uppercase;
-    float:left
-    min-width: auto;
+
+.navbar-menu1
+{
+position: fixed;
+right: 0%;
+}
 
 
-    }
-
-
-    div.fixed {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 300px;
-        border: 3px solid #73AD21;
-      }
+ 
 
  .site-header{
 
 
-        text-align: center;
-        border: 3px solid rgb(109, 114, 109);
-        position: fixed;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 5px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 4fr auto auto auto;
+    grid-column-gap: 1px;
+    grid-row-gap: 5px;
+    display: flex;
+     flex-direction: row;
+     letter-spacing: 0px;
+    height: 60px;
+    top: 7%;
+    left: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+    position: fixed;
+  
+        
  }
 
       main{
         position: relative;
-        left: 100px;
-        border: 0px solid #383b33;
-        top: 40px;
-
-
-
-
+        left: 300px;
+        border: 0px solid #63704d;
+        top: 60px;
+        min-height: auto;
       }
-      header
+      .sidelinks
       {
 
-        font-family: '{select:font}', sans-serif;
-    font-size: {select:font size};
-    color: {color:text};
-    background-color: {color:background};
-    text-align: left;
-    line-height: 160%;
-    word-wrap: break-word;
-    letter-spacing: 0.2px;
+        position:fixed;
+        left: 0px;
+        right: 60%;
+        border: 0px solid #63704d;
+        top: 150px;
+        width: 13%;
+        height: 500px;
+        min-height: auto;  
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        background-color: beige;
+        
       }
+        .meghi
+        {
+            vertical-align: middle;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+
+        }
+        .social
+        {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;   
+            
+        }
+        .bio
+        {
+            text-align: center;
+            font-size: 10px;
+            display: flex;
+            
+        }
+     
+         .bio-links
+        {
+
+            font-size: 8px;
+            display: flex;
+           text-align: center;
+           letter-spacing: 2px;
+           line-height: 160%;
+         font-weight: bold;
+        }
+
+        header
+        {
+        font-family: '{select:font}', sans-serif;
+        font-size: {select:font size};
+        color: {color:text};
+        background-color: {color:background};
+        text-align: left;
+        line-height: 160%;
+        word-wrap: break-word;
+        letter-spacing: 0.2px;
+        }
 
 
 
@@ -181,6 +231,24 @@ div {
 
 
       }
+     .mainbody
+     {
+
+        position:fixed;
+        left: 200px;
+        right: 10%;
+        border: 0px solid #63704d;
+        top: 130px;
+        width: 70%;
+        height: 600px;
+        min-height: auto;  
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        grid-template-columns : 1fr auto;
+        grid-template-rows: auto;
+     }
+
 
 
 
