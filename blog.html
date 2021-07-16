@@ -62,62 +62,65 @@
 </head>
 
 <body>
+
+
     <div class="card mainbody">
-        <div class="card-content">
 
+        <span>
 
-            <title>Save Web Form Data to Spreadsheets</title>
-            <script src="https://code.jquery.com/jquery-3.4.1.js"
-                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-            <script>
-                function SubForm() {
-                    $.ajax({
-                        url: "https://api.apispreadsheets.com/data/15236/",
-                        type: "post",
-                        data: $("#myForm").serializeArray(),
-                        success: function () {
-                            alert("Form Data Submitted :)")
-                        },
-                        error: function () {
-                            alert("There was an error :(")
-                        }
-                    });
-                }
-            </script>
-            </head>
+            <div class="column">
 
-            <body>
-                <form id="myForm">
-                    <label></label>
-                    <input class="input is-primary" type="text" placeholder="content title here" name="title" />
-                    <br />
-                    <br />
+                <div class="card">
+                    <div class="card-content">
+                        <div class="content" style="text-align: left;">
+                            <title>Save Web Form Data to Spreadsheets</title>
+                            <script src="https://code.jquery.com/jquery-3.4.1.js"
+                                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                                crossorigin="anonymous"></script>
+                            <script>
+                                function SubForm() {
+                                    $.ajax({
+                                        url: "https://api.apispreadsheets.com/data/15236/",
+                                        type: "post",
+                                        data: $("#myForm").serializeArray(),
+                                        success: function () {
+                                            alert("Form Data Submitted :)")
+                                        },
+                                        error: function () {
+                                            alert("There was an error :(")
+                                        }
+                                    });
+                                }
+                            </script>
 
-                    <label></label>
-                    <input class="input is-large" type="text" placeholder="write your post content here"
-                        name="content" />
-                    <br />
-                    <br />
-                </form>
-                <button class="button is-primary" onclick='SubForm()'>Submit</button>
+                            <form id="myForm">
+                                <label></label>
+                                <input class="input is-primary" type="text" placeholder="content title here"
+                                    name="title" />
+                                <br />
+                                <br />
 
+                                <label></label>
+                                <input class="input is-large" type="text" placeholder="write your post content here"
+                                    name="content" />
+                                <br />
+                                <br />
+                            </form>
+                            <button class="button is-primary" onclick='SubForm()'>Submit</button>
 
-        </div>
+                        </div>
+                    </div>
+                </div>
+
+        </span>
+
 
     </div>
-
 
 
 
 </body>
 
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            <strong>WildNirvan</strong> by <a href="aboutme.html">Nishan Gurung</a>. All copyrights reserved;
 
-        </p>
-    </div>
-</footer>
 
 </html>
