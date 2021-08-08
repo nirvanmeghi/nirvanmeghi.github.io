@@ -48,7 +48,6 @@ a {
 
     font-family: '{select:font}', sans-serif;
     font-size: 1.15em;
-    text-transform: uppercase;
     color: {color:black};
     background-color: {color:background};
     text-align: left;
@@ -142,7 +141,7 @@ right: 0%;
     margin: 0px;
     background-color: #ffffff;
     position: fixed;
-  
+    text-transform: uppercase;
         
  }
 
@@ -157,17 +156,18 @@ right: 0%;
       {
 
         position:fixed;
-        left: 0px;
+        left: 22%;
         right: 60%;
-        border: 0px solid #63704d;
-        top: 150px;
+        border: 0px solid #6bd471;
+        top: 165px;
         width: 13%;
         height: 500px;
         min-height: auto;  
         padding: 10px;
         font-family: 'Courier New', Courier, monospace;
         text-align: center;
-        background-color: beige;
+        text-decoration-color: white;
+        background-color: rgb(225, 238, 230);
         
       }
         .meghi
@@ -234,8 +234,8 @@ right: 0%;
      .mainbody
      {
 
-        position:fixed;
-        left: 25%;
+        position: fixed;
+        left: 40%;
         right: auto;
         border: 0px solid #63704d;
         top: 180px;
@@ -252,7 +252,6 @@ right: 0%;
             text-align: left;
 
         }
-
 
 
 </style>
